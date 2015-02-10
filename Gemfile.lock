@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:wilqq/admin_bits.git
+  revision: 61122b6af90ad32a49eb8639c84bd075de5fbe49
+  specs:
+    admin_bits (0.4.0)
+      kaminari
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -94,6 +101,9 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.2)
+    kaminari (0.16.2)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     kgio (2.9.3)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -228,6 +238,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  admin_bits!
   better_errors
   binding_of_caller
   byebug
