@@ -1,0 +1,53 @@
+<%= link_to 'New Order', new_admin_order_path, class: 'button info pull-right new-item' %>
+
+<h2><%= current_resource %></h2>
+
+<table class="admin-table">
+  <thead>
+    <tr>
+      <th>
+        <%= admin_link(:by_id, "id") %>
+      </th>
+      <th>
+        <%= admin_link(:by_name, "name") %>
+      </th>
+      <th>
+        Items
+      </th>
+      <th>
+        <%= admin_link(:by_created_at, "created_at") %>
+      </th>
+      <th>
+        <%= admin_link(:by_updated_at, "updated_at") %>
+      </th>
+      <th>
+        Actions
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @orders.each do |obj| %>
+      <tr>
+        <td>
+          <%= obj.id %>
+        </td>
+        <td>
+          <%= obj.name %>
+        </td>
+        <td>
+          <%= link_to obj.items.count, admin_items_path(filters: { where_order_id: obj.id }) %>
+        </td>
+        <td>
+          <%= obj.created_at %>
+        </td>
+        <td>
+          <%= obj.updated_at %>
+        </td>
+        <td>
+          <%= link_to 'Edit', edit_admin_order_path(obj) %>
+          <%= button_to 'Delete', admin_order_path(obj), method: :delete, class: 'button alert', data: { confirm: 'Are you sure?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

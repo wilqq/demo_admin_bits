@@ -1,13 +1,13 @@
-class Admin::ProductResource < AdminBits::Resource
+class Admin::OrderResource < AdminBits::Resource
   filters :sample_filter_method
   ordering :by_id, default: { by_id: :asc }
 
   def resource
-    Product
+    Order
   end
 
   def path
-    admin_products_path
+    admin_orders_path
   end
 
   def sample_filter_method(resource)
