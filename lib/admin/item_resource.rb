@@ -1,6 +1,6 @@
 class Admin::ItemResource < AdminBits::Resource
   filters :where_order_id
-  ordering :by_id, default: { by_id: :asc }
+  ordering :by_each_attribute, default: { by_id: :asc }
 
   def resource
     Item
@@ -12,10 +12,6 @@ class Admin::ItemResource < AdminBits::Resource
 
   def sample_filter_method(resource)
     resource
-  end
-
-  def by_id(resource, direction = :asc)
-    resource.order("id #{direction}")
   end
 
   def where_order_id(resource)
