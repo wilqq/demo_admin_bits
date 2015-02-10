@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:wilqq/admin_bits.git
+  remote: git://github.com/wilqq/admin_bits.git
   revision: 61122b6af90ad32a49eb8639c84bd075de5fbe49
   specs:
     admin_bits (0.4.0)
