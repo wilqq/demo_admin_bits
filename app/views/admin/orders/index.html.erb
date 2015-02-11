@@ -11,8 +11,8 @@
       <th class="sorting">
         <%= admin_link(:by_name, "name") %>
       </th>
-      <th>
-        Items
+      <th class="sorting">
+        <%= admin_link(:by_items_count, "Items") %>
       </th>
       <th class="sorting">
         <%= admin_link(:by_created_at, "created_at") %>
@@ -35,7 +35,7 @@
           <%= obj.name %>
         </td>
         <td>
-          <%= link_to pluralize(obj.items.count, 'item'), admin_items_path(filters: { where_order_id: obj.id }), class: 'button info' %>
+          <%= link_to pluralize(obj.items.count, 'item'), admin_items_path(filters: { where_order_id: obj.id }), class: 'button info controll' %>
         </td>
         <td>
           <%= obj.created_at %>
