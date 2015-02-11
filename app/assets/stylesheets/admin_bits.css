@@ -156,3 +156,12 @@ ul.resources-list {
   ul.resources-list li:hover, ul.resources-list li:hover a{
     background-color: #61b6d9;
     color: #FFFFFF; }
+
+footer {
+  display: block;
+  position : absolute;
+  bottom : 0;
+  height : 40px;
+  margin-top : 40px;
+  margin-bottom: 20px;
+}
