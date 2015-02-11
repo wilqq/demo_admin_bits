@@ -1,5 +1,5 @@
 <%= simple_form_for [:admin, @item] do |f| %>
     <%= f.input :name %>
-    <%= f.input :order_id %>
+    <%= f.input :order_id, label: 'Order id' %>
   <%= f.button :submit, class: 'button success', id: 'submit' %>
 <% end %>
