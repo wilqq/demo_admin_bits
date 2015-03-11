@@ -1,6 +1,7 @@
 class Admin::ItemResource < AdminBits::Resource
   filters :where_order_id
   ordering :by_each_attribute, :by_order_name, default: { by_id: :asc }
+  per_page 5
 
   def resource
     Item

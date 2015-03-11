@@ -1,5 +1,6 @@
 class Admin::OrderResource < AdminBits::Resource
   ordering :by_each_attribute, :by_items_count, default: { by_id: :asc }
+  per_page 5
 
   def resource
     Order
