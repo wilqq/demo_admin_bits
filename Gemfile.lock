@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/wilqq/admin_bits.git
-  revision: 5eb4e70bb6f95db30ac2c1555fc5717c78663615
+  revision: e976c45a6262dbe9a705de87c0dea35851134ad5
   specs:
     admin_bits (0.4.0)
       kaminari
