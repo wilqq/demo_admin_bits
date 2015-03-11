@@ -1,4 +1,7 @@
-<%= simple_form_for [:admin, @order] do |f| %> 
-    <%= f.input :name %> 
-  <%= f.button :submit, class: 'button success', id: 'submit' %>
+<%= form_for [:admin, @order] do |f| %> 
+
+  <%= f.label :name %>
+  <%= f.text_field :name %> 
+
+  <%= f.submit class: 'button success', id: 'submit' %>
 <% end %>

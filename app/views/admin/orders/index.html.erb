@@ -44,7 +44,7 @@
           <%= obj.updated_at %>
         </td>
         <td>
-          <%= link_to 'Edit', edit_admin_order_path(obj), class: 'button info controll' %>
+          <%= link_to 'Edit', edit_admin_order_path(obj), class: 'button info controll edit' %>
           <%= button_to 'Delete', admin_order_path(obj), method: :delete, class: 'button alert controll', data: { confirm: 'Are you sure?' } %>
         </td>
       </tr>

@@ -15,7 +15,6 @@ group :development, :test do
   gem 'spring'
 end
 gem 'pg'
-gem 'simple_form'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

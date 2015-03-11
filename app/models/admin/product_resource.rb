@@ -1,5 +1,4 @@
 class Admin::ProductResource < AdminBits::Resource
-  filters :sample_filter_method
   ordering :by_each_attribute, default: { by_id: :asc }
 
   def resource
@@ -8,9 +7,5 @@ class Admin::ProductResource < AdminBits::Resource
 
   def path
     admin_products_path
-  end
-
-  def sample_filter_method(resource)
-    resource
   end
 end
