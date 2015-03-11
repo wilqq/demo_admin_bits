@@ -1,7 +1,10 @@
-<%= form_for [:admin, @item] do |f| %> 
+<%= form_for [:admin, @item] do |f| %>
 
   <%= f.label :name %>
-  <%= f.text_field :name %> 
+  <%= f.text_field :name %>
+
+  <%= f.label 'Order id' %>
+  <%= f.text_field :order_id %>
 
   <%= f.submit class: 'button success', id: 'submit' %>
 <% end %>
