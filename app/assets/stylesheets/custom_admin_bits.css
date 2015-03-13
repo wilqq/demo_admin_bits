@@ -1,0 +1,21 @@
+/*
+ *= require admin_bits
+*/
+
+button.filter, .button.filter {
+  margin-left: 15px;
+  background-color: #43AC6A;
+  border-color: #368a55;
+  color: #FFFFFF; }
+  button.filter:hover, button.filter:focus, .button.filter:hover, .button.filter:focus {
+    background-color: #368a55; }
+  button.filter:hover, button.filter:focus, .button.filter:hover, .button.filter:focus {
+    color: #FFFFFF; }
+button.info, .button.info {
+  background-color: #a0d3e8;
+  border-color: #61b6d9;
+  color: #333333; }
+  button.info:hover, button.info:focus, .button.info:hover, .button.info:focus {
+    background-color: #61b6d9; }
+  button.info:hover, button.info:focus, .button.info:hover, .button.info:focus {
+    color: #FFFFFF; }
