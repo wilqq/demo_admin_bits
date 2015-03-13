@@ -2,6 +2,14 @@
 
 <h2><%= current_resource %></h2>
 
+<div id="filtering">
+  <%= admin_form :method => :get do %>
+    Name: <%= admin_text_filter :having_name %>
+
+    <button>Filter!</button>
+  <% end %>
+</div>
+
 <table class="admin-table">
   <thead>
     <tr>

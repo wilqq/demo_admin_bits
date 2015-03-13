@@ -1,4 +1,5 @@
 class Admin::OrderResource < AdminBits::Resource
+  filters :having_name
   ordering :by_each_attribute, :by_items_count, default: { by_id: :asc }
   per_page 5
 
@@ -8,6 +9,11 @@ class Admin::OrderResource < AdminBits::Resource
 
   def path
     admin_orders_path
+  end
+
+  def having_name(resource)
+    name = "%#{ filter_params[:having_name] }%"
+    resource.where(["name LIKE ?", name])
   end
 
   def by_items_count(resource, direction = 'ASC')
